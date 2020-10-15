@@ -1,11 +1,10 @@
 import React from 'react';
 import './global.css';
-//import Login from './pages/Login';
-import Cadastro from './pages/cadastro';
+import Routes from './routes'
 
 function App() {
   return (
-    <Cadastro />
+      <Routes />
   );
 }
 
