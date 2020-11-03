@@ -14,8 +14,10 @@ export default function Login() {
                 <img src={logoImg} alt="Be the Hero"/>
                 <form>
                     <h1>Faça seu login</h1>
-                    <input placeholder="Sua ID"/>
-                    <button type="submit" className="button">Entrar</button>
+                    <input placeholder="Sua ID"/>             
+                    
+                    <button type="submit" className="button">Entrar</button>                
+                    
                     <Link to="/register">
                         <FiLogIn size={16} color='#e02041' />
                         Não Tenho Cadastro
