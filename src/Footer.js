@@ -1,9 +1,7 @@
 import React from 'react';
 
-function Footer() {
+export default function Footer(props) {
   return (
-    <p>Ronado Federighi &copy; 2020</p>
+    <h3> Ronaldo &copy; {props.year} </h3>
   );
 }
-
-export default Footer;

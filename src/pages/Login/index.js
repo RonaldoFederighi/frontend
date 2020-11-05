@@ -1,13 +1,13 @@
 import React from 'react';
 import { FiLogIn } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-
 import logoImg from '../../assets/logo.svg';
 import heroesImg from '../../assets/heroes.png';
 import './styles.css';
-
+import { useState } from 'react';
 
 export default function Login() {
+    const [ ong_id , setOng_id] = useState('');
     return(
         <div className="login-container">
             <section className="form">

@@ -1,11 +1,16 @@
 import React from 'react';
 import './global.css';
-import Routes from './routes'
+import Routes from './routes';
+import Footer from './Footer';
 
-function App() {
+export default function App() {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
-      <Routes />
+      <div>
+        <Routes />
+        <Footer year={year}  />
+      </div>
   );
 }
-
-export default App;

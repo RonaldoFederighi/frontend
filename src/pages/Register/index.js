@@ -3,9 +3,15 @@ import { FiLogIn } from 'react-icons/fi'
 import logoImg from '../../assets/logo.svg';
 import './styles.css';
 import { Link } from 'react-router-dom';
-
+import { useState } from 'react';
 
 export default function Cadastro() {
+    const [ name, setName ] = useState('');
+    const [ email, setEmail ] = useState('');
+    const [ whatsapp, setWhatsapp ] = useState('');
+    const [ city, setCity ] = useState('');
+    const [ uf, setUf ] = useState('');    
+    
     return(
         <div className="cadastro-container">
             <section className="form">
